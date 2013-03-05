@@ -44,3 +44,8 @@ class Cdr < ActiveRecord::Base
   self.table_name = "cdr"
   self.primary_key = "id"
 end
+
+class AgentsCount < ActiveRecord::Base
+  self.table_name = "agents_count"
+  self.primary_key = "id"
+end
