@@ -8,10 +8,10 @@ require File.expand_path('../db.rb', __FILE__)
 require File.expand_path('../ws_dbobjets.rb', __FILE__)
 
 
-#class CdrWs < Sinatra::Application #Only apply to production deployment as a rackup app, for dev purposes is a direct app not a class
+class CdrWs < Sinatra::Application #Only apply to production deployment as a rackup app, for dev purposes is a direct app not a class, allows easier testing
 
 get "/" do
-  "<h2>Dominos CallCenter CDR RESTfull WebService....</h2>"
+  "<h2>Asterisk VoIP bases CallCenter CDR REST WebService....</h2>"
 end
 
 get "/totalincoming" do
@@ -376,7 +376,7 @@ def checktoken(fecha1, fecha2,cedula, token, nonce)
 end
 
 
-#end
+end
 
 
 
